@@ -1,4 +1,7 @@
-return "Zero" if num == 0
+# @param {Integer} num
+# @return {String}
+def number_to_words(num)
+    return "Zero" if num == 0
     hash={0 => ["",""], 1 => ["One","One"], 2 => ["Two","Twenty"], 3 => ["Three","Thirty"], 4 => ["Four","Forty"], 5 => ["Five","Fifty"], 6 => ["Six","Sixty"], 7 => ["Seven","Seventy"], 8 => ["Eight","Eighty"], 9 => ["Nine","Ninety"]}
     hash2={100000000 => "Hundred Million", 1000000 => "Million", 100000 => "Hundred Thousand", 10000 => "Thousand" ,1000 => "Thousand", 100 => "Hundred"}
     return hash[num][0] if num <= 9 
